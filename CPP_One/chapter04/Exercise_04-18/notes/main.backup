@@ -1,0 +1,70 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+    char gender;
+    double weight, waist, wrist, hip, forearm;
+    double a1, a2, a3, a4, a5, b, bodyFat, bodyFatPercentage;
+
+    // Set output formatting to 2 decimal places
+    cout << fixed << setprecision(2);
+
+    // Prompt for gender
+    cout << "Enter gender ('M' for male, 'F' for female): ";
+    cin >> gender;
+
+    if (gender == 'm' || gender == 'M') {
+        // Prompt for male inputs
+        cout << "Enter body weight (in pounds): ";
+        cin >> weight;
+        cout << "Enter waist measurement at fullest point (in inches): ";
+        cin >> waist;
+
+        // Male formula
+        a1 = (weight * 1.082) + 94.42;
+        a2 = waist * 4.15;
+        b = a1 - a2;
+        bodyFat = weight - b;
+        bodyFatPercentage = (bodyFat * 100) / weight;
+
+        // Output results
+        cout << "\n--- Results ---" << endl;
+        cout << "Body Fat: " << bodyFat << " lbs" << endl;
+        cout << "Body Fat Percentage: " << bodyFatPercentage << "%" << endl;
+
+    } else if (gender == 'f' || gender == 'F') {
+        // Prompt for female inputs
+        cout << "Enter body weight (in pounds): ";
+        cin >> weight;
+        cout << "Enter wrist measurement at fullest point (in inches): ";
+        cin >> wrist;
+        cout << "Enter waist measurement at navel (in inches): ";
+        cin >> waist;
+        cout << "Enter hip measurement at fullest point (in inches): ";
+        cin >> hip;
+        cout << "Enter forearm measurement at fullest point (in inches): ";
+        cin >> forearm;
+
+        // Female formula
+        a1 = (weight * 0.732) + 8.987;
+        a2 = wrist / 3.140;
+        a3 = waist * 0.157;
+        a4 = hip * 0.249;
+        a5 = forearm * 0.434;
+        b = a1 + a2 - a3 - a4 + a5;
+        bodyFat = weight - b;
+        bodyFatPercentage = (bodyFat * 100) / weight;
+
+        // Output results
+        cout << "\n--- Results ---" << endl;
+        cout << "Body Fat: " << bodyFat << " lbs" << endl;
+        cout << "Body Fat Percentage: " << bodyFatPercentage << "%" << endl;
+
+    } else {
+        cout << "Invalid gender input. Please restart the program and enter 'M' or 'F'." << endl;
+    }
+
+    return 0;
+}

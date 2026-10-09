@@ -1,0 +1,15 @@
+Script started on 2026-09-24 23:59:37+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="328" LINES="12"]
+[?2004h[0;32m@galbizures-stack [0m➜ [1;34m.../9781337102087_malik-cpp-programming-8e-8451422c-c4f5-4b29-a914-f909c816e170/chapter4/ex09/student [0;36m([1;31mtemplate[0;36m) [0m$ ./main.exe 
+[?2004lPlease input a math expression.
+ex. 3+3, 3/1, 45-4, 9*9
+13.973*6.65
+13.973 * 6.65 = 92.92
+[?2004h[0;32m@galbizures-stack [0m➜ [1;34m.../9781337102087_malik-cpp-programming-8e-8451422c-c4f5-4b29-a914-f909c816e170/chapter4/ex09/student [0;36m([1;31mtemplate[0;36m) [0m$ ./main.exe 
+[?2004lPlease input a math expression.
+ex. 3+3, 3/1, 45-4, 9*9
+13.973*5.65
+13.973 * 5.65 = 78.95
+[?2004h[0;32m@galbizures-stack [0m➜ [1;34m.../9781337102087_malik-cpp-programming-8e-8451422c-c4f5-4b29-a914-f909c816e170/chapter4/ex09/student [0;36m([1;31mtemplate[0;36m) [0m$ exit
+[?2004lexit
+
+Script done on 2026-09-25 00:00:24+00:00 [COMMAND_EXIT_CODE="0"]
